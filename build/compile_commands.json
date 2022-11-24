@@ -1,0 +1,17 @@
+[
+{
+  "directory": "C:/Uni/Programmering/Assignments/VSC/Uge 12/assignment-12-EN99-bit/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/mylib.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\mylib.dir\\src\\Duration.cpp.obj -c \"C:\\Uni\\Programmering\\Assignments\\VSC\\Uge 12\\assignment-12-EN99-bit\\src\\Duration.cpp\"",
+  "file": "C:/Uni/Programmering/Assignments/VSC/Uge 12/assignment-12-EN99-bit/src/Duration.cpp"
+},
+{
+  "directory": "C:/Uni/Programmering/Assignments/VSC/Uge 12/assignment-12-EN99-bit/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -g -O0 -std=gnu++14 -o CMakeFiles\\main.dir\\src\\main.cpp.obj -c \"C:\\Uni\\Programmering\\Assignments\\VSC\\Uge 12\\assignment-12-EN99-bit\\src\\main.cpp\"",
+  "file": "C:/Uni/Programmering/Assignments/VSC/Uge 12/assignment-12-EN99-bit/src/main.cpp"
+},
+{
+  "directory": "C:/Uni/Programmering/Assignments/VSC/Uge 12/assignment-12-EN99-bit/build/tests",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/tests.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\tests.dir\\src\\tests.cpp.obj -c \"C:\\Uni\\Programmering\\Assignments\\VSC\\Uge 12\\assignment-12-EN99-bit\\tests\\src\\tests.cpp\"",
+  "file": "C:/Uni/Programmering/Assignments/VSC/Uge 12/assignment-12-EN99-bit/tests/src/tests.cpp"
+}
+]
