@@ -28,12 +28,10 @@ clock.tick1();
 
 REQUIRE (clock.getDuration_clock()==1);
 
-
 clock.tick2(5);
-clock.tick2(7);
 
 REQUIRE (clock.getDuration_clock()==6);
-REQUIRE (clock.getDuration_clock()==false);
+
 
 }
 
