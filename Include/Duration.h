@@ -9,16 +9,25 @@ private:
 
 int time; //count the clock
 
+int alarm;
+
+bool alarmHasBeenSet;
+
 public:
     Duration_clock(); //constructor
-    ~Duration_clock(); //destructor
+    
 
-    int getDuration_clock(); //function to get duration
+    int getDuration_clock(); //function to get time of clock
 
     Duration_clock(int t); //t = value of time in the getDuration function (Constructor) 
     
+    bool tick1();
 
-    int tick(int);
+    bool tick2(int);
+
+    void setAlarm(int);
+
+    bool Check_And_Update_Alarm();
 
 };
 #endif
