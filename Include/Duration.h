@@ -25,9 +25,9 @@ public:
 
     int getDuration_clock(); //function to get time of clock: 
     
-    bool tick1(); //
+    bool tick(); //
 
-    bool tick2(int);
+    bool tick(int);
 
     void setAlarm(int);
 

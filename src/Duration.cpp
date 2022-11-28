@@ -27,7 +27,7 @@ Duration_clock::Duration_clock(int t)
 
 //e
 
-bool Duration_clock::tick1()
+bool Duration_clock::tick()
 {
 time++;
 return checkAndUpdateAlarm();
@@ -35,7 +35,7 @@ return checkAndUpdateAlarm();
 
 //f)
 
-bool Duration_clock::tick2(int dt)
+bool Duration_clock::tick(int dt)
 {
     assert(dt>0);
     time += dt;
@@ -57,10 +57,10 @@ alarmHasBeenSet = true;
 //i
 bool Duration_clock::checkAndUpdateAlarm()
 {
-    if (time>alarm)
+    if (time>alarm && alarmHasBeenSet == true)
     {
         alarm = 0;
-        alarmHasBeenSet = true;
+        alarmHasBeenSet = false;
         return true;
     }
     else

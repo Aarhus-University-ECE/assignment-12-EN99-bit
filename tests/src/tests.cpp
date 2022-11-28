@@ -24,15 +24,16 @@ REQUIRE (clock2.getDuration_clock()==50);
 TEST_CASE("tick1")
 {
 Duration_clock clock; //create test clock
-clock.tick1();
+clock.tick();
 
 REQUIRE (clock.getDuration_clock()==1);
 
-clock.tick2(5);
+clock.tick(5);
 
 REQUIRE (clock.getDuration_clock()==6);
-
-
+//Assertion that value must be over zero makes this test redundant
+//clock.tick(-1);
+//REQUIRE (clock.getDuration_clock()==false);
 }
 
 TEST_CASE("Alarm") //test alarm
@@ -41,9 +42,10 @@ Duration_clock clock;
 
 clock.setAlarm(17);
 
-REQUIRE (clock.tick1()==false);
+REQUIRE (clock.tick()==false);
 REQUIRE (clock.checkAndUpdateAlarm()==false);
-REQUIRE (clock.tick2(18)==true);
+REQUIRE (clock.tick(18)==true); //testing for if tick is higher than alarm
+REQUIRE (clock.tick(8)==false); //testing for if tick is lower than alarm
 
 
 }
