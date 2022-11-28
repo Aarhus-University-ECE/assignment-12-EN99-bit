@@ -5,7 +5,7 @@
 
 //a)
 
-int Duration_clock::getDuration_clock() //function to get time
+int Duration_clock::getDuration_clock() //function to get time and constructor
 {
     return time;//
 }
@@ -30,7 +30,7 @@ Duration_clock::Duration_clock(int t)
 bool Duration_clock::tick1()
 {
 time++;
-return Check_And_Update_Alarm();
+return checkAndUpdateAlarm();
 }
 
 //f)
@@ -39,10 +39,11 @@ bool Duration_clock::tick2(int q)
 {
     assert(q>0);
     time += q;
-    return Check_And_Update_Alarm();
+    return checkAndUpdateAlarm();
 }
 
-bool Duration_clock::Check_And_Update_Alarm()
+//i
+bool Duration_clock::checkAndUpdateAlarm()
 {
     if (time>alarm)
     {

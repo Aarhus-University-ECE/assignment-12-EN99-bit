@@ -42,13 +42,11 @@ REQUIRE (clock.getDuration_clock()==false);
 TEST_CASE("setAlarm")
 {
 Duration_clock clock;
-Duration_clock clock1;
 
-clock.setAlarm(2);
-clock1.setAlarm(5);
+clock.setAlarm(17);
 
-
-
+REQUIRE (clock.tick1()==false);
+REQUIRE ()
 
 
 }

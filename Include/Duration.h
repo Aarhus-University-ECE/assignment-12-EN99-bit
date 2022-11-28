@@ -14,20 +14,24 @@ int alarm;
 bool alarmHasBeenSet;
 
 public:
+ 
+    //Constructors:
+
     Duration_clock(); //constructor
     
+    Duration_clock(int t); //t = value of time in the getDuration function (Constructor)
 
-    int getDuration_clock(); //function to get time of clock
+    //Methods:
 
-    Duration_clock(int t); //t = value of time in the getDuration function (Constructor) 
+    int getDuration_clock(); //function to get time of clock: 
     
-    bool tick1();
+    bool tick1(); //
 
     bool tick2(int);
 
     void setAlarm(int);
 
-    bool Check_And_Update_Alarm();
+    bool checkAndUpdateAlarm();
 
 };
 #endif
