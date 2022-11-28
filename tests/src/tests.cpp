@@ -8,7 +8,7 @@
 // Add your test cases. Dont forget to include header file. 
 
 
-TEST_CASE("Constructor")
+TEST_CASE("Constructor") //testing constructor
 {
 Duration_clock clock; //case for when clock is zero
 Duration_clock clock1(5); //When creating "new clocks" for testting, no same name
@@ -23,7 +23,6 @@ REQUIRE (clock2.getDuration_clock()==50);
 
 TEST_CASE("tick1")
 {
-
 Duration_clock clock; //create test clock
 clock.tick1();
 
@@ -31,22 +30,22 @@ REQUIRE (clock.getDuration_clock()==1);
 
 
 clock.tick2(5);
-clock.tick2(-1);
-
+clock.tick2(7);
 
 REQUIRE (clock.getDuration_clock()==6);
 REQUIRE (clock.getDuration_clock()==false);
 
 }
 
-TEST_CASE("setAlarm")
+TEST_CASE("Alarm") //test alarm
 {
 Duration_clock clock;
 
 clock.setAlarm(17);
 
 REQUIRE (clock.tick1()==false);
-REQUIRE ()
+REQUIRE (clock.checkAndUpdateAlarm()==false);
+REQUIRE (clock.tick2(18)==true);
 
 
 }
